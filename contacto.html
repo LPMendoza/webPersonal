@@ -5,12 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="shortcut icon" href="img/imgDevelopment.png" type="image/x-icon">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <title>Pedro Mendoza</title>
 </head>
 
-<body>
+<body class="grey">
 
    <header class="hobbies contact">
       <div class="backHeader">
@@ -18,10 +19,18 @@
             <h1><a href="index.html">Pedro Mendoza</a></h1>
             <nav>
                <ul>
-                  <a href="estudios.html"><li>Historial Académico</li></a>
-                  <a href="interes.html"><li>Temas de Interes</li></a>
-                  <a href="hobbies.html"><li>Hobbies</li></a>
-                  <a href="contacto.html"><li>Contacto</li></a>
+                  <a href="estudios.html">
+                     <li>Historial Académico</li>
+                  </a>
+                  <a href="hobbies.html">
+                     <li>Hobbies</li>
+                  </a>
+                  <a href="interes.html">
+                     <li>Temas de Interes</li>
+                  </a>
+                  <a href="contacto.html">
+                     <li>Contacto</li>
+                  </a>
                </ul>
             </nav>
          </div>
@@ -33,58 +42,68 @@
 
    </header>
 
+   <aside>
+      <div class="asideContent">
+         <h1>
+            Contactame
+         </h1>
+         <p>
+            Llena tus datos para ponerte en contacto conmigo
+         </p>
+
+      </div>
+   </aside>
+
+   <section class="formContent">
+
+      <article class="imageTextContent">
+         <div class="form">
+
+            <div class="inputContent">
+               <input id="txtNumber" class="txt" type="text" required>
+               <label>Nombre</label>
+            </div>
+            <div class="inputContent">
+               <input id="txtPhone" class="txt" type="number" required>
+               <label>Teléfono</label>
+            </div>
+            <div class="inputContent">
+               <input id="txtEmail" class="txt" type="email" required>
+               <label>Email</label>
+            </div>
+            <button id="btnSend">Enviar</button>
+
+         </div>
+      </article>
+
+   </section>
+
    <section>
-
       <article class="imageTextContent">
          <div class="imgContent">
-            <img src="img/imgWho.png">
+            <img src="img/imgLike.png">
             <div class="textContent">
                <h1>
-                  ¿Quién soy?
+                  ¡Gracias!
                </h1>
                <p>
-                  Ingeniero en software, especializado en web y dirección de proyectos
-               </p>
-            </div>
-         </div>
-      </article>
-      <article class="imageTextContent grey">
-         <div class="imgContentRight">
-            <div class="textContentLeft">
-               <h1>
-                  ¿A qué me dedico?
-               </h1>
-               <p>
-                  Crear soluciones de software empleando diferentes tecnologias y metodologías
-               </p>
-            </div>
-            <img src="img/imgDevelopment.png">
-         </div>
-      </article>
-
-      <article class="imageTextContent">
-         <div class="imgContent">
-            <img src="img/imgMeet.png">
-            <div class="textContent">
-               <h1>
-                  Navega
-               </h1>
-               <p>
-                  Entra a las diferentes secciones del menú para conocer más de mi
+                  Gracias por visitar la página, espero te pongas en contacto conmigo
                </p>
             </div>
          </div>
       </article>
    </section>
    <footer>
-      
+
       <div class="data">
-         <p>Luis Pedro Mendoza Aceves   |   Derechos Reservados 2019.</p>
+         <p>Luis Pedro Mendoza Aceves | Derechos Reservados 2019.</p>
          <p></p>
          <p></p>
       </div>
       <div class="socialNetworks">
-         <a href="https://www.facebook.com/pedroslipknot333"><img src="img/facebook.png"><p>Facebook</p></a>
+         <a href="https://www.facebook.com/pedroslipknot333"><img src="img/facebook.png">
+            <p>Facebook</p>
+         </a>
       </div>
 
    </footer>

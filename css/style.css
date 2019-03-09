@@ -42,18 +42,22 @@ header {
 
 .interes {
    background: url('../img/backgroundInteres.png');
+   background-size: cover;
 }
 
 .hobbies {
-   background: url('../img/backgroundHobbies.jpg');
+   background: url('../img/g.jpg');
+   background-size: cover;
 }
 
 .academic {
    background: url('../img/backgroundAcademic.png');
+   background-size: cover;
 }
 
 .contact {
    background: url('../img/backgroundContact.jpg');
+   background-size: cover;
 }
 
 header .title {
@@ -79,6 +83,7 @@ header .title {
    transition: 0.2s ease-in-out;
    animation-name: showHeader;
    animation-duration: 0.7s;
+   z-index: 1;
 }
 
 .menuBar h1 {
@@ -126,6 +131,7 @@ a {
    border-bottom: 1px solid #d6d6d6;
    padding-bottom: 3%;
    color: #536dfec4;
+   text-align: center;
 }
 
 .imageTextContent p {
@@ -161,11 +167,16 @@ a {
    margin: 10% 0% 5% 5%;
 }
 
+iframe {
+   display: inline-block;
+}
+
 footer {
    background: #536dfe;
    margin: 0%;
    color: #fff;
    text-align: center;
+   width: 100%;
 }
 
 footer p {
@@ -199,6 +210,116 @@ footer .data {
 .grey {
    background: #eee;
    color: #000;
+}
+
+.formContent {
+   display: inline-block;
+   width: 40%;
+}
+
+.asideContent {
+   background: #fff;
+   margin-bottom: 5%;
+   border-radius: 3px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.asideContent h1{
+   font-size: 3rem;
+   border-bottom: 1px solid #d6d6d6;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   color: #536dfec4;
+   text-align: center;
+}
+
+.asideContent p {
+   font-size: 1.5rem;
+   text-align: center;
+   padding: 2% 5% 5% 8%;
+}
+
+
+aside {
+   float: left;
+   width: 30%;
+   margin-left: 2%;
+}
+
+.form {
+   background: #fff;
+   width: 100%;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin-left: 2.42%;
+	border-radius: 3px;
+   transition: 0.4s ease;
+   border-bottom: 4px solid #4256ca;
+   display: inline-block;
+}
+
+.form h1 {
+   padding-top: 5%;
+   border-bottom: none;
+}
+
+.inputContent {
+	display: block;
+	width: 80%;
+	margin: 10% 10% 0% 10%;
+}
+
+.inputContent .txt {
+   border: none;
+   border-bottom: 1px solid rgba(202, 202, 202, 0.933);
+   width: 90%;
+   padding: 10px;
+   outline: none;
+   font-size: 20px;
+   transition: 0.2s ease;
+}
+
+.inputContent label {
+   position: relative;
+   right: 0px;
+   top: -30px;
+   transition: 0.2s ease;
+   z-index: 0;
+}
+
+.inputContent .txt:focus + label, .inputContent .txt:hover + label, .inputContent .txt:valid + label {
+   top: -70px;
+   font-size: 14px;
+   color: #4256ca;
+}
+
+.inputContent .txt:focus, .inputContent .txt:hover, .inputContent .txt:valid {
+   border-bottom: 2px solid #4256ca;
+}
+
+button {
+   float: right;
+   margin: 20px 60px;
+   width: 20%;
+   padding: 10px;
+   border: none;
+   border-radius: 2px;
+   background: #4256ca;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+   color: #fff;
+   font-family: 'Montserrat';
+   outline: none;
+   transition: 0.2s ease;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+button:hover {   
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes showHeader {
