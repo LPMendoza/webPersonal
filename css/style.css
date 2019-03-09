@@ -52,6 +52,10 @@ header {
    background: url('../img/backgroundAcademic.png');
 }
 
+.contact {
+   background: url('../img/backgroundContact.jpg');
+}
+
 header .title {
    width: 100%;
    text-align: center;
@@ -86,11 +90,9 @@ header .title {
 }
 
 .menuBar nav {
-   display: inline-block;
    text-align: right;
-   width: 60%;
-   border: none;
-   margin-left: 18%;
+   width: auto;
+   float: right;
 }
 
 .menuBar nav ul li {
@@ -99,11 +101,11 @@ header .title {
    border-bottom: solid 3px rgba(0, 0, 0, 0.0);
    font-size: 1.2rem;
    cursor: pointer;
-   padding: 10px 20px 15px 20px;
+   padding: 20px 20px 15px 20px;
 }
 
 .menuBar nav ul li:hover {
-   border-bottom: solid 3px #fff176;
+   background: rgba(0,0,0,0.2);
 }
 
 a {
@@ -116,12 +118,11 @@ a {
 .imageTextContent {
    display: inline-block;
    width: 100%;
-   padding: 2% 0% 2% 0%;
+   padding: 5% 0% 5% 0%;
 }
 
 .imageTextContent h1{
    font-size: 3rem;
-   margin-bottom: 3%;
    border-bottom: 1px solid #d6d6d6;
    padding-bottom: 3%;
    color: #536dfec4;
@@ -145,7 +146,7 @@ a {
    display: inline-block;
    width: 40%;
    text-align: center;
-   margin: 10% 0% 5% 10%;
+   margin: 10% 0% 5% 7%;
 }
 
 .imgContentRight img {
