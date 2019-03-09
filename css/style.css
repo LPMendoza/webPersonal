@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+   padding: 0%;
+   margin: 0%;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   font-family: 'Montserrat';
+   height: 100%;
+   font-size: 18px;
+}
+
+body::-webkit-scrollbar-track {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar {
+   background: rgba(0, 0, 0, 0);
+   width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 0, 0, 0.3);
+}
+
+header {
+   background: url('../img/background.png');
+   background-size: cover;
+   color: #fff;
+   width: 100%;
+   height: 100%;
+}
+
+.interes {
+   background: url('../img/backgroundInteres.png');
+}
+
+.hobbies {
+   background: url('../img/backgroundHobbies.jpg');
+}
+
+.academic {
+   background: url('../img/backgroundAcademic.png');
+}
+
+header .title {
+   width: 100%;
+   text-align: center;
+   display: inline-block;
+   margin-top: 20%;
+   font-size: 4rem;
+   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+   animation-name: showHeader;
+   animation-duration: 0.7s;
+}
+
+.backHeader {
+   background: rgba(0, 0, 0, 0.3);
+   height: 100%;
+}
+
+.menuBar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   transition: 0.2s ease-in-out;
+   animation-name: showHeader;
+   animation-duration: 0.7s;
+}
+
+.menuBar h1 {
+   display: inline-block;
+   width: 20%;
+   padding-left: 20px;
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.menuBar nav {
+   display: inline-block;
+   text-align: right;
+   width: 60%;
+   border: none;
+   margin-left: 18%;
+}
+
+.menuBar nav ul li {
+   display: inline-block;
+   transition: 0.2s ease;
+   border-bottom: solid 3px rgba(0, 0, 0, 0.0);
+   font-size: 1.2rem;
+   cursor: pointer;
+   padding: 10px 20px 15px 20px;
+}
+
+.menuBar nav ul li:hover {
+   border-bottom: solid 3px #fff176;
+}
+
+a {
+   text-decoration: none;
+   list-style: none;
+   display: inline-block;
+   color: #fff;
+}
+
+.imageTextContent {
+   display: inline-block;
+   width: 100%;
+   padding: 2% 0% 2% 0%;
+}
+
+.imageTextContent h1{
+   font-size: 3rem;
+   margin-bottom: 3%;
+   border-bottom: 1px solid #d6d6d6;
+   padding-bottom: 3%;
+   color: #536dfec4;
+}
+
+.imageTextContent p {
+   font-size: 1.5rem;
+}
+
+.imgContent {
+   display: inline-block;
+   width: 100%;
+}
+
+.imgContent img {
+   float: left;
+   margin-left: 10%;
+}
+
+.textContent {
+   display: inline-block;
+   width: 40%;
+   text-align: center;
+   margin: 10% 0% 5% 10%;
+}
+
+.imgContentRight img {
+   float: right;
+   margin-right: 10%;
+}
+
+.textContentLeft {
+   display: inline-block;
+   width: 40%;
+   text-align: center;
+   margin: 10% 0% 5% 5%;
+}
+
+footer {
+   background: #536dfe;
+   margin: 0%;
+   color: #fff;
+   text-align: center;
+}
+
+footer p {
+   display: inline-block;
+   font-size: 1rem;
+}
+footer div {
+   display: inline-block;
+}
+
+footer .socialNetworks {
+   width: 35%;
+   border-left: 3px solid #4256ca;
+}
+
+footer .socialNetworks p{
+   margin: 8% 0% 0% 0%;
+   padding: 0% 0% 0% 5%;
+}
+
+footer .socialNetworks img {
+   width: 32px;
+   float: left;
+}
+
+footer .data {
+   padding: 5% 5% 5% 0%;
+   width: 35%;
+}
+
+.grey {
+   background: #eee;
+   color: #000;
+}
+
+@keyframes showHeader {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
