@@ -9,15 +9,4 @@ window.onscroll = function () {
       menuBar.style.background = 'rgba(0, 0, 0, 0)';
       menuBar.style.boxShadow = 'none';
    }
-
 };
-
-$(document).ready(function () {
-   $(window).scroll(function () {
-      var barra = $(window).scrollTop();
-      var posicion = (barra * 0.50);
-      $('header').css({
-         'background-position': '0 -' + posicion + 'px'
-      });
-   });
-});

@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-   background: rgba(0, 0, 0, 0.3);
+   background: #304ffe;
 }
 
 header {
@@ -40,13 +40,38 @@ header {
    height: 100%;
 }
 
+header .imgContent {
+   width: 164px;
+   height: 164px;
+   background: url('../img/yo.jpg');
+   background-size: 164px;
+   background-position-x: -3px;
+   background-position-y: -5px;
+   border-radius: 128px;
+   margin: 13% 0% 0% 44%;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   animation-name: showHeader;
+   animation-duration: 0.7s;
+}
+
+header .imgTitle {
+   width: 100%;
+   text-align: center;
+   display: inline-block;
+   margin-top: 2%;
+   font-size: 4rem;
+   text-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   animation-name: showHeader;
+   animation-duration: 0.7s;
+}
+
 .interes {
    background: url('../img/backgroundInteres.png');
    background-size: cover;
 }
 
 .hobbies {
-   background: url('../img/g.jpg');
+   background: url('../img/backgroundHobbies.jpg');
    background-size: cover;
 }
 
@@ -66,7 +91,7 @@ header .title {
    display: inline-block;
    margin-top: 20%;
    font-size: 4rem;
-   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+   text-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    animation-name: showHeader;
    animation-duration: 0.7s;
 }
@@ -130,7 +155,7 @@ a {
    font-size: 3rem;
    border-bottom: 1px solid #d6d6d6;
    padding-bottom: 3%;
-   color: #536dfec4;
+   color: #536dfe;
    text-align: center;
 }
 
@@ -169,12 +194,13 @@ a {
 
 iframe {
    display: inline-block;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 footer {
-   background: #536dfe;
+   background: #e0e0e0;
    margin: 0%;
-   color: #fff;
+   color: #000;
    text-align: center;
    width: 100%;
 }
@@ -194,12 +220,18 @@ footer .socialNetworks {
 
 footer .socialNetworks p{
    margin: 8% 0% 0% 0%;
-   padding: 0% 0% 0% 5%;
+   padding: 0% 0% 0% 10%;
+   color: #000;
 }
 
 footer .socialNetworks img {
    width: 32px;
    float: left;
+}
+
+footer .socialNetworks div {
+   display: inline-block;
+   margin-left: 5%;
 }
 
 footer .data {
