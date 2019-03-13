@@ -43,7 +43,7 @@ header {
 header .imgContent {
    width: 164px;
    height: 164px;
-   background: url('../img/yo.jpg');
+   background: url('../img/me.jpg');
    background-size: 164px;
    background-position-x: -3px;
    background-position-y: -5px;
@@ -76,7 +76,7 @@ header .imgTitle {
 }
 
 .academic {
-   background: url('../img/backgroundAcademic.png');
+   background: url('../img/backgroundAcademic.jpg');
    background-size: cover;
 }
 
@@ -105,7 +105,7 @@ header .title {
    position: fixed;
    top: 0;
    width: 100%;
-   transition: 0.2s ease-in-out;
+   transition: 0.3s ease-in-out;
    animation-name: showHeader;
    animation-duration: 0.7s;
    z-index: 1;
