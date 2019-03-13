@@ -131,11 +131,7 @@ header .title {
    border-bottom: solid 3px rgba(0, 0, 0, 0.0);
    font-size: 1.2rem;
    cursor: pointer;
-   padding: 20px 20px 15px 20px;
-}
-
-.menuBar nav ul li:hover {
-   background: rgba(0,0,0,0.2);
+   padding: 20px 0px 15px 0px;
 }
 
 a {
@@ -143,6 +139,33 @@ a {
    list-style: none;
    display: inline-block;
    color: #fff;
+}
+
+.menuBar nav ul .linkBorder, .activeBorder {
+   margin-right: 20px;
+}
+
+.menuBar nav ul .linkBorder:after {
+   content: '';
+   display: block;
+   width: 0%;
+   height: 2px;
+   background: #fff;
+   transition: 0.2s ease-out;
+}
+
+.menuBar nav ul .linkBorder:hover::after {
+   width: 100%;
+}
+
+.menuBar nav ul .activeBorder:after  {
+   content: '';
+   text-align: center;
+   display: block;
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   transition: 0.2s ease-out;
 }
 
 .imageTextContent {
