@@ -48,7 +48,7 @@ header .imgContent {
    background-position-x: -3px;
    background-position-y: -5px;
    border-radius: 128px;
-   margin: 10% 0% 0% 44%;
+   margin: 13% 0% 0% 44%;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    animation-name: showHeader;
    animation-duration: 0.7s;
@@ -89,7 +89,7 @@ header .title {
    width: 100%;
    text-align: center;
    display: inline-block;
-   margin-top: 15%;
+   margin-top: 20%;
    font-size: 4rem;
    text-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    animation-name: showHeader;
@@ -107,6 +107,9 @@ header .title {
    animation-name: showHeader;
    animation-duration: 0.7s;
    z-index: 1;
+   position: fixed;
+   background: #304ffeb4;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .menuBar h1 {
